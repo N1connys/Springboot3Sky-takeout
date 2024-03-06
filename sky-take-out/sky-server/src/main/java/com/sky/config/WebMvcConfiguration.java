@@ -52,6 +52,7 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
                 .apiInfo(apiInfo)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.sky.controller"))
+                //通过反射解析Controller类调用方法，这里的类路径也不能写错
                 .paths(PathSelectors.any())
                 .build();
         return docket;
@@ -60,9 +61,12 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
     /**
      * 设置静态资源映射
      * @param registry
+     * 如果没有这段注释访问页面访问不到，
      */
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/doc.html").addResourceLocations("classpath:/META-INF/resources/");
-        registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
+        registry.addResourceHandler("/doc.html").
+                addResourceLocations("classpath:/META-INF/resources/");
+        registry.addResourceHandler("/webjars/**").
+                addResourceLocations("classpath:/META-INF/resources/webjars/");
     }
 }
