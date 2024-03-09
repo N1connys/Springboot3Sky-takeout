@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="完成功能新增员工，利用threadlocallocal实现隔离线程之间的共享值传递">
+    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="完善分页员工代码，将传入的时间格式进行格式化，利用springmvc的 protected void extendMessageConverters(List&lt;HttpMessageConverter&lt;?&gt;&gt; converters)">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sky-take-out/sky-pojo/src/main/java/com/sky/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-pojo/src/main/java/com/sky/entity/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/config/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/config/WebMvcConfiguration.java" afterDir="false" />
@@ -12,7 +15,6 @@
       <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/EmployeeMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/EmployeeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/EmployeeMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,11 +60,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.SkyApplication.executor": "Debug",
+    "Spring Boot.SkyApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "using",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "G:/外卖/资料/day01/后端初始工程",
+    "last_opened_file_path": "G:/外卖/资料/day01/后端初始工程/sky-take-out/sky-server/src/main/java/com/sky/controller/admin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -82,6 +84,14 @@
 }]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-server\src\main\java\com\sky\controller\admin" />
+      <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-server\src\main\java\com\sky\service\impl" />
+      <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-server\src\main\java\com\sky\mapper" />
+      <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-server\src\main\resources\mapper" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="SkyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -114,7 +124,8 @@
       <workItem from="1709801475285" duration="1422000" />
       <workItem from="1709804105018" duration="7805000" />
       <workItem from="1709825746488" duration="1822000" />
-      <workItem from="1709905925097" duration="3083000" />
+      <workItem from="1709905925097" duration="5992000" />
+      <workItem from="1709969548646" duration="6508000" />
     </task>
     <task id="LOCAL-00001" summary="swagger注解的基本使用">
       <option name="closed" value="true" />
@@ -140,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709803415013</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="完善分页员工代码，将传入的时间格式进行格式化，利用springmvc的 protected void extendMessageConverters(List&lt;HttpMessageConverter&lt;?&gt;&gt; converters)">
+      <option name="closed" value="true" />
+      <created>1709910438217</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709910438217</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,36 +182,7 @@
     <MESSAGE value="swagger注解的基本使用" />
     <MESSAGE value="完成功能新增员工，下一步进一步完善" />
     <MESSAGE value="完成功能新增员工，利用threadlocallocal实现隔离线程之间的共享值传递" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成功能新增员工，利用threadlocallocal实现隔离线程之间的共享值传递" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/EmployeeController.java</url>
-          <line>93</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/EmployeeController.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/EmployeeServiceImpl.java</url>
-          <line>88</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/config/WebMvcConfiguration.java</url>
-          <line>79</line>
-          <properties class="com.sky.config.WebMvcConfiguration" method="extendMessageConverters">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="完善分页员工代码，将传入的时间格式进行格式化，利用springmvc的 protected void extendMessageConverters(List&lt;HttpMessageConverter&lt;?&gt;&gt; converters)" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善分页员工代码，将传入的时间格式进行格式化，利用springmvc的 protected void extendMessageConverters(List&lt;HttpMessageConverter&lt;?&gt;&gt; converters)" />
   </component>
 </project>
