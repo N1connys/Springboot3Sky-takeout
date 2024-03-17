@@ -6,3 +6,8 @@ sky:
     database: sky_take_out
     username: root
     password: 123456
+  alioss:
+    access-key-id: AKIDBOgAfBnR7nMcsbEgEduFauDUwT2kdbeZ
+    access-key-secret: QycelyEwrkVGF8xkR6lMuQ5spoKvoprx
+    bucket-name: demostudy-1325056457
+    endpoint: cos.ap-nanjing.myqcloud.com
