@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="修改员工信息以及菜品相关的分页查询，修改禁用等功能">
+    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="完成文件上传至服务器以及了解如何搭建服务器和新增菜品添加功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/com/sky/utils/AliOssUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/com/sky/utils/AliOssUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/SkyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/SkyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/EmployeeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +75,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "SQL Dialects",
@@ -140,7 +134,10 @@
       <workItem from="1710224057588" duration="1412000" />
       <workItem from="1710554076518" duration="15919000" />
       <workItem from="1710662047737" duration="986000" />
-      <workItem from="1710663474384" duration="2547000" />
+      <workItem from="1710663474384" duration="5701000" />
+      <workItem from="1710683538393" duration="2455000" />
+      <workItem from="1710739649467" duration="1258000" />
+      <workItem from="1710742688063" duration="1830000" />
     </task>
     <task id="LOCAL-00001" summary="swagger注解的基本使用">
       <option name="closed" value="true" />
@@ -182,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709990094818</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="完成文件上传至服务器以及了解如何搭建服务器和新增菜品添加功能">
+      <option name="closed" value="true" />
+      <created>1710666091941</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710666091941</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +212,8 @@
     <MESSAGE value="完成功能新增员工，利用threadlocallocal实现隔离线程之间的共享值传递" />
     <MESSAGE value="完善分页员工代码，将传入的时间格式进行格式化，利用springmvc的 protected void extendMessageConverters(List&lt;HttpMessageConverter&lt;?&gt;&gt; converters)" />
     <MESSAGE value="修改员工信息以及菜品相关的分页查询，修改禁用等功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改员工信息以及菜品相关的分页查询，修改禁用等功能" />
+    <MESSAGE value="完成文件上传至服务器以及了解如何搭建服务器和新增菜品添加功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成文件上传至服务器以及了解如何搭建服务器和新增菜品添加功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -216,11 +222,6 @@
           <url>file://$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/aspect/AutoFillAspect.java</url>
           <line>32</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/DishServiceImpl.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="org.apache.ibatis.reflection.ReflectionException" package="org.apache.ibatis.reflection" />

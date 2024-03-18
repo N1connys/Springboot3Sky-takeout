@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sky.mapper.DishFlavorMapper">
+    <insert id="insertFlavor" useGeneratedKeys="true" keyProperty="id">
+# 获取自增主键哦分隔符,
+     insert into dish_flavor(dish_id, name, value) values
+         <foreach collection="dish_flavor" item="df" separator=",">
+             (#{df.dishId},#{df.name},#{df.value})
+         </foreach>
+    </insert>
+    <delete id="deleteBrachByDishId">
+        delete from dish_flavor where dish_id in
+        <foreach collection="Dishids" item="Ids" open="(" close=")" separator=",">
+            #{Ids}
+        </foreach>
+    </delete>
+</mapper>
