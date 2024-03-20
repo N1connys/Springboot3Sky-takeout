@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="redis学习" />
+    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="redis学习">
+      <change afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/division.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/MAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/MAIN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/SimpleStaticFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/SimpleStaticFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/add.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/division.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/multip.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/multip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/sub.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/sub.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +64,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.MAIN.executor": "Run",
+    "JUnit.SpringDataRedisTest.RdeisCommon.executor": "Run",
+    "JUnit.SpringDataRedisTest.RedisDemoList.executor": "Run",
+    "JUnit.SpringDataRedisTest.RedisDemoSet.executor": "Run",
+    "JUnit.SpringDataRedisTest.RedisDemoZset.executor": "Run",
     "JUnit.SpringDataRedisTest.TestRedisString.executor": "Debug",
     "JUnit.SpringDataRedisTest.name.executor": "Run",
     "JUnit.SpringDataRedisTest.test.executor": "Debug",
@@ -80,6 +93,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
     "vue.rearranger.settings.migration": "true"
   },
@@ -99,14 +113,17 @@
       <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-server\src\main\java\com\sky\service\impl" />
       <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-server\src\main\java\com\sky\mapper" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-common\src\main\java\classdemo\opration" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.SpringDataRedisTest.name">
+  <component name="RunManager" selected="Spring Boot.SkyApplication">
     <configuration name="MAIN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="classdemo.MAIN" />
       <module name="sky-common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classdemo.*" />
+          <option name="PATTERN" value="classdemo.opration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,7 +131,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringDataRedisTest.TestRedisString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpringDataRedisTest.RdeisCommon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sky-server" />
       <extension name="coverage">
         <pattern>
@@ -124,13 +141,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.sky" />
       <option name="MAIN_CLASS_NAME" value="com.sky.SpringDataRedisTest" />
-      <option name="METHOD_NAME" value="TestRedisString" />
+      <option name="METHOD_NAME" value="RdeisCommon" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringDataRedisTest.name" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpringDataRedisTest.RedisDemoList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sky-server" />
       <extension name="coverage">
         <pattern>
@@ -140,13 +157,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.sky" />
       <option name="MAIN_CLASS_NAME" value="com.sky.SpringDataRedisTest" />
-      <option name="METHOD_NAME" value="name" />
+      <option name="METHOD_NAME" value="RedisDemoList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringDataRedisTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpringDataRedisTest.RedisDemoSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sky-server" />
       <extension name="coverage">
         <pattern>
@@ -156,7 +173,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.sky" />
       <option name="MAIN_CLASS_NAME" value="com.sky.SpringDataRedisTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="METHOD_NAME" value="RedisDemoSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringDataRedisTest.RedisDemoZset" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sky-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sky.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sky" />
+      <option name="MAIN_CLASS_NAME" value="com.sky.SpringDataRedisTest" />
+      <option name="METHOD_NAME" value="RedisDemoZset" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,10 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpringDataRedisTest.name" />
-        <item itemvalue="JUnit.SpringDataRedisTest.TestRedisString" />
-        <item itemvalue="JUnit.SpringDataRedisTest.test" />
+        <item itemvalue="JUnit.SpringDataRedisTest.RdeisCommon" />
+        <item itemvalue="JUnit.SpringDataRedisTest.RedisDemoZset" />
         <item itemvalue="Application.MAIN" />
+        <item itemvalue="JUnit.SpringDataRedisTest.RedisDemoSet" />
+        <item itemvalue="JUnit.SpringDataRedisTest.RedisDemoList" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +247,7 @@
       <workItem from="1710760815638" duration="8190000" />
       <workItem from="1710848285799" duration="5022000" />
       <workItem from="1710911311563" duration="2824000" />
-      <workItem from="1710919817762" duration="4867000" />
+      <workItem from="1710919817762" duration="16819000" />
     </task>
     <task id="LOCAL-00001" summary="swagger注解的基本使用">
       <option name="closed" value="true" />
@@ -279,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710925012118</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="redis学习">
+      <option name="closed" value="true" />
+      <created>1710925608819</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710925608819</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

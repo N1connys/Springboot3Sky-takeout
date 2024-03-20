@@ -1,4 +1,6 @@
-package classdemo;
+package classdemo.opration;
+
+import classdemo.Operation;
 
 public class add extends Operation {
     @Override

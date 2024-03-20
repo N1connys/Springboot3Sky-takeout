@@ -1,6 +1,8 @@
-package classdemo;
+package classdemo.opration;
 
-public class sub  extends Operation{
+import classdemo.Operation;
+
+public class sub  extends Operation {
     @Override
     public double GetResult() {
         double res= super.getNumberA()- super.getNumberB();

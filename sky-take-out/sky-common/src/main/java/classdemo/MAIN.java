@@ -6,8 +6,9 @@ public class MAIN {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("输入两个数字:");
+        System.out.println("输入两个数字和运算符号:");
         double numberA = scanner.nextDouble();
+
         double numberB = scanner.nextDouble();
 
         // 处理换行符
