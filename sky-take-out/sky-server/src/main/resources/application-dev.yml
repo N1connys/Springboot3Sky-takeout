@@ -11,3 +11,8 @@ sky:
     access-key-secret: QycelyEwrkVGF8xkR6lMuQ5spoKvoprx
     bucket-name: demostudy-1325056457
     endpoint: cos.ap-nanjing.myqcloud.com
+  redis:
+    host: localhost
+    port: 6379
+    database: 10
+    password: 1433223xixi
