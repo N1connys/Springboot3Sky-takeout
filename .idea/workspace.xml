@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="完成菜品删除功能，以及完善了删除过程中过多SQL语句执行的问题。">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/DishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/DishFlavorMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/DishFlavorMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/DishMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/DishMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/DishService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/DishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/DishServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/DishMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/DishMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="redis学习" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,7 +213,7 @@
       <workItem from="1710760815638" duration="8190000" />
       <workItem from="1710848285799" duration="5022000" />
       <workItem from="1710911311563" duration="2824000" />
-      <workItem from="1710919817762" duration="4259000" />
+      <workItem from="1710919817762" duration="4867000" />
     </task>
     <task id="LOCAL-00001" summary="swagger注解的基本使用">
       <option name="closed" value="true" />
@@ -282,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710744961787</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="redis学习">
+      <option name="closed" value="true" />
+      <created>1710925012118</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710925012118</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +306,8 @@
     <MESSAGE value="修改员工信息以及菜品相关的分页查询，修改禁用等功能" />
     <MESSAGE value="完成文件上传至服务器以及了解如何搭建服务器和新增菜品添加功能" />
     <MESSAGE value="完成菜品删除功能，以及完善了删除过程中过多SQL语句执行的问题。" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成菜品删除功能，以及完善了删除过程中过多SQL语句执行的问题。" />
+    <MESSAGE value="redis学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis学习" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
