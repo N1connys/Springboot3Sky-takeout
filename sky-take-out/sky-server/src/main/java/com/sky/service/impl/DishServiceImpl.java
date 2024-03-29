@@ -9,6 +9,7 @@ import com.sky.dto.DishDTO;
 import com.sky.dto.DishPageQueryDTO;
 import com.sky.entity.Dish;
 import com.sky.entity.DishFlavor;
+import com.sky.entity.Setmeal;
 import com.sky.exception.DeletionNotAllowedException;
 import com.sky.mapper.DishFlavorMapper;
 import com.sky.mapper.DishMapper;
@@ -22,6 +23,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.ArrayList;
@@ -120,6 +122,59 @@ public class DishServiceImpl implements DishService {
             });
             dishFlavorMapper.insertFlavor(dishFlavors);
         }
+    }
+//    @Override
+//    public List<DishVO> DishListWithFlavor(Dish dish) {
+//        List<Dish> dishList=dishMapper.
+//    }
+
+    @Override
+    public void startOrStop(Integer status, Long id) {
+        Dish dish = Dish.builder().id(id).status(status).build();
+        dishMapper.updateWithFlavor(dish);
+        if (status == StatusConstant.DISABLE) {
+            //判断当前菜品是否和套餐关联
+            List<Long> dishIds = new ArrayList<>();
+            dishIds.add(id);
+            List<Long> setmealIds = setmealDishMapper.getSetmealIdsByDishIds(dishIds);
+            if (setmealIds != null || setmealIds.size() > 0) {
+                for (Long ids : setmealIds) {
+                    Setmeal setmeal = Setmeal.builder()
+                            .id(ids)
+                            .status(StatusConstant.DISABLE)
+                            .build();
+                    setmealDishMapper.update(setmeal);
+                }
+            }
+            //个人思路：将当前的菜品id与整个套餐的dish_id关联查询
+            //如果查询结果>0则代表存在套餐与其管理，需要将套餐也停售
+        }
+    }
+    @Override
+    public List<Dish> list(Long categoryId) {
+        Dish dish=Dish.builder()
+                .categoryId(categoryId)
+                .status(StatusConstant.ENABLE)
+                .build();
+        List<Dish> dishList = dishMapper.selectDishes(dish);
+        return dishList;
+    }
+
+    @Override
+    public List<DishVO> listwithFlavor(Dish dish) {
+        List<Dish> dishList = dishMapper.selectDishes(dish);
+        //拼接口味表
+        List<DishVO> dishVOS=new ArrayList<>();
+        for (Dish dish1:dishList)
+        {
+            DishVO dishVO=new DishVO();
+            BeanUtils.copyProperties(dish1,dishVO);
+            List<DishFlavor> dishidwithFlavor = dishFlavorMapper.getByDishidwithFlavor(dish1.getId());
+            dishVO.setFlavors(dishidwithFlavor);
+            dishVOS.add(dishVO);
+        }
+
+        return dishVOS;
     }
 }
 

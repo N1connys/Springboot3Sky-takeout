@@ -2,6 +2,7 @@ package com.sky.controller.admin;
 
 import com.sky.dto.DishDTO;
 import com.sky.dto.DishPageQueryDTO;
+import com.sky.entity.Dish;
 import com.sky.result.PageResult;
 import com.sky.result.Result;
 import com.sky.service.DishService;
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Api(tags = "菜品相关接口")
-@RestController
+@RestController("adminDishController")
 @Slf4j
 @RequestMapping("/admin/dish")
 public class DishController {
@@ -61,5 +62,18 @@ public class DishController {
     {
         dishService.updateWithFlavor(dishDTO);
         return Result.success();
+    }
+    @PostMapping("/status/{status}")
+    @ApiOperation("菜品起售停售")
+    public Result<String> startOrStop(@PathVariable Integer status, Long id){
+        dishService.startOrStop(status,id);
+        return Result.success();
+    }
+    @ApiOperation("根据分类查询菜品")
+    @GetMapping("list")
+    public Result<List<Dish>> list(Long categoryId)
+    {
+        List<Dish> list = dishService.list(categoryId);
+        return Result.success(list);
     }
 }

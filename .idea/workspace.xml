@@ -4,15 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="redis学习">
-      <change afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/division.java" afterDir="false" />
+    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="利用redis实现店铺的营业状态（打烊or营业）">
+      <change afterPath="$PROJECT_DIR$/CLASSDEMO/src/main/java/basicdatabasevisit/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CLASSDEMO/src/main/java/basicdatabasevisit/MySQLServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CLASSDEMO/src/main/java/basicdatabasevisit/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CLASSDEMO/src/main/java/basicdatabasevisit/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/ClientMAIN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/MAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/MAIN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/SimpleStaticFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/SimpleStaticFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/add.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/add.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/division.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/multip.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/multip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/sub.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/sub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/MAIN.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/Operation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/SimpleStaticFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/OpFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/add.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/division.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/multip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/sub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/config/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/config/WebMvcConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/DishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/DishMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/DishMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/SetmealDishMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/SetmealDishMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/SetmealMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/SetmealMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/DishService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/DishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/DishServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/DishMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/DishMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/SetmealDishMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/SetmealDishMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +41,7 @@
       <list>
         <option value="AnnotationType" />
         <option value="Interface" />
+        <option value="Mappernew" />
         <option value="Class" />
       </list>
     </option>
@@ -63,7 +81,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ClientMAIN.executor": "Debug",
     "Application.MAIN.executor": "Run",
+    "JUnit.HttpClient.GetTest.executor": "Run",
+    "JUnit.HttpClient.executor": "Run",
     "JUnit.SpringDataRedisTest.RdeisCommon.executor": "Run",
     "JUnit.SpringDataRedisTest.RedisDemoList.executor": "Run",
     "JUnit.SpringDataRedisTest.RedisDemoSet.executor": "Run",
@@ -73,6 +94,7 @@
     "JUnit.SpringDataRedisTest.test.executor": "Debug",
     "Maven.sky-take-out [clean].executor": "Run",
     "Maven.sky-take-out [compile].executor": "Run",
+    "Maven.sky-take-out [package].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -84,17 +106,17 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "using",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "G:/外卖/资料/day01/后端初始工程/sky-take-out/sky-server/src/main/resources/mapper",
+    "last_opened_file_path": "G:/外卖/资料/day01/后端初始工程",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -116,10 +138,13 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-common\src\main\java\classdemo\opration" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sky.interceptor" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SkyApplication">
-    <configuration name="MAIN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="classdemo.MAIN" />
+    <configuration name="ClientMAIN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="classdemo.ClientMAIN" />
       <module name="sky-common" />
       <extension name="coverage">
         <pattern>
@@ -127,6 +152,37 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sky-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sky.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sky" />
+      <option name="MAIN_CLASS_NAME" value="com.sky.HttpClient" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpClient.GetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sky-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sky.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sky" />
+      <option name="MAIN_CLASS_NAME" value="com.sky.HttpClient" />
+      <option name="METHOD_NAME" value="GetTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,38 +198,6 @@
       <option name="PACKAGE_NAME" value="com.sky" />
       <option name="MAIN_CLASS_NAME" value="com.sky.SpringDataRedisTest" />
       <option name="METHOD_NAME" value="RdeisCommon" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringDataRedisTest.RedisDemoList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sky-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sky.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sky" />
-      <option name="MAIN_CLASS_NAME" value="com.sky.SpringDataRedisTest" />
-      <option name="METHOD_NAME" value="RedisDemoList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringDataRedisTest.RedisDemoSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sky-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sky.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sky" />
-      <option name="MAIN_CLASS_NAME" value="com.sky.SpringDataRedisTest" />
-      <option name="METHOD_NAME" value="RedisDemoSet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -204,11 +228,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClientMAIN" />
+        <item itemvalue="JUnit.HttpClient" />
+        <item itemvalue="JUnit.HttpClient.GetTest" />
         <item itemvalue="JUnit.SpringDataRedisTest.RdeisCommon" />
         <item itemvalue="JUnit.SpringDataRedisTest.RedisDemoZset" />
-        <item itemvalue="Application.MAIN" />
-        <item itemvalue="JUnit.SpringDataRedisTest.RedisDemoSet" />
-        <item itemvalue="JUnit.SpringDataRedisTest.RedisDemoList" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +271,23 @@
       <workItem from="1710760815638" duration="8190000" />
       <workItem from="1710848285799" duration="5022000" />
       <workItem from="1710911311563" duration="2824000" />
-      <workItem from="1710919817762" duration="16819000" />
+      <workItem from="1710919817762" duration="17450000" />
+      <workItem from="1710945360515" duration="1256000" />
+      <workItem from="1710946910499" duration="680000" />
+      <workItem from="1710995197482" duration="195000" />
+      <workItem from="1710995959947" duration="422000" />
+      <workItem from="1711021553936" duration="3144000" />
+      <workItem from="1711089297010" duration="1042000" />
+      <workItem from="1711095029651" duration="1395000" />
+      <workItem from="1711214210625" duration="3624000" />
+      <workItem from="1711218091429" duration="105000" />
+      <workItem from="1711275976634" duration="2356000" />
+      <workItem from="1711367944489" duration="5288000" />
+      <workItem from="1711374683173" duration="1313000" />
+      <workItem from="1711527955021" duration="19924000" />
+      <workItem from="1711606422130" duration="5063000" />
+      <workItem from="1711611565801" duration="75000" />
+      <workItem from="1711628403435" duration="10408000" />
     </task>
     <task id="LOCAL-00001" summary="swagger注解的基本使用">
       <option name="closed" value="true" />
@@ -321,7 +361,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710925608819</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="利用redis实现店铺的营业状态（打烊or营业）">
+      <option name="closed" value="true" />
+      <created>1710944814470</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710944814470</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +397,8 @@
     <MESSAGE value="完成文件上传至服务器以及了解如何搭建服务器和新增菜品添加功能" />
     <MESSAGE value="完成菜品删除功能，以及完善了删除过程中过多SQL语句执行的问题。" />
     <MESSAGE value="redis学习" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis学习" />
+    <MESSAGE value="利用redis实现店铺的营业状态（打烊or营业）" />
+    <option name="LAST_COMMIT_MESSAGE" value="利用redis实现店铺的营业状态（打烊or营业）" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -365,6 +414,11 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.sky.dto.UserLoginDTO" memberName="code" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
