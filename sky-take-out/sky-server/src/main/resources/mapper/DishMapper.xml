@@ -36,6 +36,12 @@
             </where>
             order by create_time desc
     </select>
+    <select id="getCategoryIdBydishId" resultType="java.lang.Long">
+        select category_id from dish where id in
+        <foreach collection="DishIds" item="dishId" open="(" separator="," close=")">
+            #{dishId}
+        </foreach>
+    </select>
 
     <delete id="deleteByIds">
         delete from dish where id in

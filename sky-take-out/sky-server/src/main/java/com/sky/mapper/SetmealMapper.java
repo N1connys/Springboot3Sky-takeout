@@ -55,8 +55,8 @@ public interface SetmealMapper {
     void updateSetmeal(Setmeal setmeal);
     @Select("select a.* from dish a left join setmeal_dish b on a.id = b.dish_id where b.setmeal_id = #{setmealId}")
     List<Dish> getBySetmealId(Long setmealId);
-    @Select("  select sd.copies ,d.description,d.image,d.name from dish d left join setmeal_dish sd on" +
-            "   d.id=sd.dish_id where setmeal_id=1;")
+    @Select("select sd.name, sd.copies, d.image, d.description  from dish d left join setmeal_dish sd on" +
+            "   d.id=sd.dish_id where setmeal_id=#{setmealId};")
     List<DishItemVO> listVOS (Long setmealId);
 
     List<Setmeal> listSetmealQuery(Setmeal setmeal);

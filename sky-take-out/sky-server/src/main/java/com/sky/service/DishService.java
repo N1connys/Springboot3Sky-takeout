@@ -59,4 +59,7 @@ public interface DishService {
     List<Dish> list(Long categoryId);
 
     List<DishVO> listwithFlavor(Dish dish);
+
+    List<Long> getCategoryIdBydishId(List<Long> dishIds);
+    void deleteBycategoryId(Long category_id);
 }

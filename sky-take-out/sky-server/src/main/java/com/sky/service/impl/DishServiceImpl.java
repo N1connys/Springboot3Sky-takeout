@@ -176,5 +176,16 @@ public class DishServiceImpl implements DishService {
 
         return dishVOS;
     }
+
+    @Override
+    public List<Long> getCategoryIdBydishId(List<Long> dishIds) {
+        List<Long> cateIdsList = dishMapper.getCategoryIdBydishId(dishIds);
+        return cateIdsList;
+    }
+
+    @Override
+    public void deleteBycategoryId(Long category_id) {
+        dishMapper.deleteByid(category_id);
+    }
 }
 

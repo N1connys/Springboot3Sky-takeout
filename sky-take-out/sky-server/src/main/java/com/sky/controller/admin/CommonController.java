@@ -31,7 +31,7 @@ public class CommonController {
         String originalFilename =file.getOriginalFilename();
         //获取原始文件名的后缀
         String last = originalFilename.substring(originalFilename.lastIndexOf("."));
-        //构造新的文件名
+        //构造新的文件名(UUID唯一名字)
         String objName=UUID.randomUUID().toString()+last;
 //        文件请求路径
 

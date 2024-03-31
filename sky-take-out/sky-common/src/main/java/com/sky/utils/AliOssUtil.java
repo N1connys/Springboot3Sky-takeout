@@ -63,6 +63,7 @@ public class AliOssUtil {
                 .append(endpoint)
                 .append("/")
                 .append(objectName);
+//        https://demostudy-1325056457.cos.ap-nanjing.myqcloud.com/0356ddd0-929e-477c-ba16-91f1d9214926.png
 
         log.info("文件上传到:{}", stringBuilder.toString());
 

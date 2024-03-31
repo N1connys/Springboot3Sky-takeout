@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="利用redis实现店铺的营业状态（打烊or营业）">
-      <change afterPath="$PROJECT_DIR$/CLASSDEMO/src/main/java/basicdatabasevisit/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CLASSDEMO/src/main/java/basicdatabasevisit/MySQLServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CLASSDEMO/src/main/java/basicdatabasevisit/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CLASSDEMO/src/main/java/basicdatabasevisit/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/ClientMAIN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/MAIN.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/SimpleStaticFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/OpFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/add.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/division.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/multip.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-common/src/main/java/classdemo/opration/sub.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/config/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/config/WebMvcConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/DishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/DishMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/DishMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/SetmealDishMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/SetmealDishMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/SetmealMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/SetmealMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/DishService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/DishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/DishServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/DishMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/DishMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/SetmealDishMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/SetmealDishMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="完成微信小程序与后端对接，完成套餐相关接口。" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,9 +14,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="Class" />
         <option value="Interface" />
         <option value="Mappernew" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,52 +53,52 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ClientMAIN.executor": "Debug",
-    "Application.MAIN.executor": "Run",
-    "JUnit.HttpClient.GetTest.executor": "Run",
-    "JUnit.HttpClient.executor": "Run",
-    "JUnit.SpringDataRedisTest.RdeisCommon.executor": "Run",
-    "JUnit.SpringDataRedisTest.RedisDemoList.executor": "Run",
-    "JUnit.SpringDataRedisTest.RedisDemoSet.executor": "Run",
-    "JUnit.SpringDataRedisTest.RedisDemoZset.executor": "Run",
-    "JUnit.SpringDataRedisTest.TestRedisString.executor": "Debug",
-    "JUnit.SpringDataRedisTest.name.executor": "Run",
-    "JUnit.SpringDataRedisTest.test.executor": "Debug",
-    "Maven.sky-take-out [clean].executor": "Run",
-    "Maven.sky-take-out [compile].executor": "Run",
-    "Maven.sky-take-out [package].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.SkyApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "using",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "G:/外卖/资料/day01/后端初始工程",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ClientMAIN.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MAIN.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HttpClient.GetTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HttpClient.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringDataRedisTest.RdeisCommon.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringDataRedisTest.RedisDemoList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringDataRedisTest.RedisDemoSet.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringDataRedisTest.RedisDemoZset.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringDataRedisTest.TestRedisString.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.SpringDataRedisTest.name.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringDataRedisTest.test.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven.sky-take-out [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.sky-take-out [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.sky-take-out [package].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SkyApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;using&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/JAVAPROJECT/springcache-demo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -288,6 +262,16 @@
       <workItem from="1711606422130" duration="5063000" />
       <workItem from="1711611565801" duration="75000" />
       <workItem from="1711628403435" duration="10408000" />
+      <workItem from="1711673893331" duration="2153000" />
+      <workItem from="1711677544983" duration="3475000" />
+      <workItem from="1711787345728" duration="6353000" />
+      <workItem from="1711805157737" duration="2255000" />
+      <workItem from="1711808196413" duration="13000" />
+      <workItem from="1711808228625" duration="69000" />
+      <workItem from="1711808317851" duration="114000" />
+      <workItem from="1711808450207" duration="3433000" />
+      <workItem from="1711865995424" duration="1802000" />
+      <workItem from="1711872143780" duration="8064000" />
     </task>
     <task id="LOCAL-00001" summary="swagger注解的基本使用">
       <option name="closed" value="true" />
@@ -369,7 +353,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710944814470</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="完成微信小程序与后端对接，完成套餐相关接口。">
+      <option name="closed" value="true" />
+      <created>1711674129565</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1711674129565</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +390,8 @@
     <MESSAGE value="完成菜品删除功能，以及完善了删除过程中过多SQL语句执行的问题。" />
     <MESSAGE value="redis学习" />
     <MESSAGE value="利用redis实现店铺的营业状态（打烊or营业）" />
-    <option name="LAST_COMMIT_MESSAGE" value="利用redis实现店铺的营业状态（打烊or营业）" />
+    <MESSAGE value="完成微信小程序与后端对接，完成套餐相关接口。" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成微信小程序与后端对接，完成套餐相关接口。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
