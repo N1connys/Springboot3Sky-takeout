@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="完成微信小程序与后端对接，完成套餐相关接口。" />
+    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="完成套餐緩存和購物車系統">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +44,9 @@
         <option name="userSettingsFile" value="D:\Maven\apache-maven-3.9.6\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -272,6 +278,10 @@
       <workItem from="1711808450207" duration="3433000" />
       <workItem from="1711865995424" duration="1802000" />
       <workItem from="1711872143780" duration="8064000" />
+      <workItem from="1711881250190" duration="677000" />
+      <workItem from="1711887134927" duration="162000" />
+      <workItem from="1711898594431" duration="803000" />
+      <workItem from="1711970404448" duration="2426000" />
     </task>
     <task id="LOCAL-00001" summary="swagger注解的基本使用">
       <option name="closed" value="true" />
@@ -361,7 +371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711674129565</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="完成套餐緩存和購物車系統">
+      <option name="closed" value="true" />
+      <created>1711881301397</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1711881301397</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +409,8 @@
     <MESSAGE value="redis学习" />
     <MESSAGE value="利用redis实现店铺的营业状态（打烊or营业）" />
     <MESSAGE value="完成微信小程序与后端对接，完成套餐相关接口。" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成微信小程序与后端对接，完成套餐相关接口。" />
+    <MESSAGE value="完成套餐緩存和購物車系統" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成套餐緩存和購物車系統" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -405,6 +424,15 @@
           <properties class="org.apache.ibatis.reflection.ReflectionException" package="org.apache.ibatis.reflection" />
           <option name="timeStamp" value="6" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/ShoppingCartImpl.java</url>
+          <line>30</line>
+          <properties class="com.sky.service.impl.ShoppingCartImpl" method="add">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
