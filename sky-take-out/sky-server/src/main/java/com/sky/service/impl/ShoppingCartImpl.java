@@ -12,6 +12,7 @@ import com.sky.service.ShoppingCartServive;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -77,5 +78,28 @@ public class ShoppingCartImpl implements ShoppingCartServive {
         //通过threadLocal获取userId(唯一)
         Long currentUserId = BaseContext.getCurrentId();
         shoppingCartMapper.cleanAllCarts(currentUserId);
+    }
+
+    @Override
+    public void deleteSingle(ShoppingCartDTO shoppingCartDTO) {
+        //删除购物车判断每个菜品或者套餐的Number数字
+        Long userId=BaseContext.getCurrentId();
+        ShoppingCart shoppingCart=new ShoppingCart();
+        BeanUtils.copyProperties(shoppingCartDTO,shoppingCart);
+        shoppingCart.setUserId(userId);
+        List<ShoppingCart> spList = shoppingCartMapper.listShopCart(shoppingCart);
+        if(spList!=null&&spList.size()>0)
+        {
+            ShoppingCart shoppingCar = spList.get(0);
+            Integer Number=shoppingCar.getNumber();
+            if(Number==1)
+            {
+                shoppingCartMapper.delete(shoppingCar.getId());
+            }
+            else{
+                shoppingCar.setNumber(Number-1);
+                shoppingCartMapper.updateNumberById(shoppingCart);
+            }
+        }
     }
 }

@@ -113,6 +113,5 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
         // converters.add(converte);
         //设置优先使用自己的消息转换器
         converters.add(0,converte);
-
     }
 }

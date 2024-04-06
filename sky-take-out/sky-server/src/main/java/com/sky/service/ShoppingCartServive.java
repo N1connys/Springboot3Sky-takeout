@@ -9,4 +9,6 @@ public interface ShoppingCartServive {
     void add(ShoppingCartDTO shoppingCartDTO);
     List<ShoppingCart> queryCartAll();
     void cleanCarts();
+
+    void deleteSingle(ShoppingCartDTO shoppingCartDTO);
 }

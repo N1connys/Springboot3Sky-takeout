@@ -41,4 +41,12 @@ public class ShoppingCartController {
         shoppingCartServive.cleanCarts();
         return Result.success();
     }
+    @ApiOperation("删除购物车的一个商品")
+    @PostMapping("/sub")
+    public Result cleanSingle(@RequestBody  ShoppingCartDTO shoppingCartDTO)
+    {
+        //逻辑层
+        shoppingCartServive.deleteSingle(shoppingCartDTO);
+        return Result.success();
+    }
 }

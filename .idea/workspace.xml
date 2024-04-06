@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="完成套餐緩存和購物車系統">
+    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="完善购物车系统，包括查看购物车和删除购物车">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/config/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/config/WebMvcConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/controller/user/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/controller/user/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/ShoppingCartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/ShoppingCartMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/ShoppingCartServive.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/ShoppingCartServive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/ShoppingCartImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/ShoppingCartImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/ShoppingCart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/ShoppingCart.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +24,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Class" />
-        <option value="Interface" />
         <option value="Mappernew" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,6 +68,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.ARRAY.executor&quot;: &quot;Run&quot;,
     &quot;Application.ClientMAIN.executor&quot;: &quot;Debug&quot;,
     &quot;Application.MAIN.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.HttpClient.GetTest.executor&quot;: &quot;Run&quot;,
@@ -86,7 +94,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;using&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/JAVAPROJECT/springcache-demo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/外卖/资料/day01/后端初始工程/sky-take-out/sky-server/src/main/resources/mapper&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -111,9 +119,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-server\src\main\resources\mapper" />
-      <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-server\src\main\java\com\sky\controller\admin" />
-      <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-server\src\main\java\com\sky\service\impl" />
       <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-server\src\main\java\com\sky\mapper" />
+      <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-server\src\main\java\com\sky\service\impl" />
+      <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-server\src\main\java\com\sky\service" />
+      <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-server\src\main\java\com\sky\controller\user" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-common\src\main\java\classdemo\opration" />
@@ -123,6 +132,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SkyApplication">
+    <configuration name="ARRAY" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sky.config.ARRAY" />
+      <module name="sky-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sky.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClientMAIN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="classdemo.ClientMAIN" />
       <module name="sky-common" />
@@ -183,22 +205,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringDataRedisTest.RedisDemoZset" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sky-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sky.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sky" />
-      <option name="MAIN_CLASS_NAME" value="com.sky.SpringDataRedisTest" />
-      <option name="METHOD_NAME" value="RedisDemoZset" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SkyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="sky-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sky.SkyApplication" />
@@ -208,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ARRAY" />
         <item itemvalue="Application.ClientMAIN" />
         <item itemvalue="JUnit.HttpClient" />
         <item itemvalue="JUnit.HttpClient.GetTest" />
         <item itemvalue="JUnit.SpringDataRedisTest.RdeisCommon" />
-        <item itemvalue="JUnit.SpringDataRedisTest.RedisDemoZset" />
       </list>
     </recent_temporary>
   </component>
@@ -281,7 +287,13 @@
       <workItem from="1711881250190" duration="677000" />
       <workItem from="1711887134927" duration="162000" />
       <workItem from="1711898594431" duration="803000" />
-      <workItem from="1711970404448" duration="2426000" />
+      <workItem from="1711970404448" duration="9296000" />
+      <workItem from="1712041354080" duration="9816000" />
+      <workItem from="1712208689268" duration="10952000" />
+      <workItem from="1712243646446" duration="5209000" />
+      <workItem from="1712297013563" duration="10441000" />
+      <workItem from="1712321126982" duration="7111000" />
+      <workItem from="1712388551073" duration="1113000" />
     </task>
     <task id="LOCAL-00001" summary="swagger注解的基本使用">
       <option name="closed" value="true" />
@@ -379,7 +391,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711881301397</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="完善购物车系统，包括查看购物车和删除购物车">
+      <option name="closed" value="true" />
+      <created>1711972891302</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1711972891302</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +430,8 @@
     <MESSAGE value="利用redis实现店铺的营业状态（打烊or营业）" />
     <MESSAGE value="完成微信小程序与后端对接，完成套餐相关接口。" />
     <MESSAGE value="完成套餐緩存和購物車系統" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成套餐緩存和購物車系統" />
+    <MESSAGE value="完善购物车系统，包括查看购物车和删除购物车" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善购物车系统，包括查看购物车和删除购物车" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -424,15 +445,6 @@
           <properties class="org.apache.ibatis.reflection.ReflectionException" package="org.apache.ibatis.reflection" />
           <option name="timeStamp" value="6" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/ShoppingCartImpl.java</url>
-          <line>30</line>
-          <properties class="com.sky.service.impl.ShoppingCartImpl" method="add">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
