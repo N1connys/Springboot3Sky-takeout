@@ -19,3 +19,4 @@ sky:
   wechat:
     appid: wx5017c4667ccf75e4
     secret: 4da071f3af11f2ee33af66eb8d9c8c89
+    notify-url:  https://330f0ea1.r15.cpolar.top/notify/paySucess

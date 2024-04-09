@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="完善购物车系统，包括查看购物车和删除购物车">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="完成了定时任务如定时检查用户收到货确认收获没，完成用户下单 商家拒单接单查看订单详情等功能。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/config/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/config/WebMvcConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/controller/user/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/controller/user/ShoppingCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/ShoppingCartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/ShoppingCartMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/ShoppingCartServive.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/ShoppingCartServive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/ShoppingCartImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/ShoppingCartImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/ShoppingCart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/ShoppingCart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/controller/notify/PayNotifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/controller/notify/PayNotifyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +288,10 @@
       <workItem from="1712243646446" duration="5209000" />
       <workItem from="1712297013563" duration="10441000" />
       <workItem from="1712321126982" duration="7111000" />
-      <workItem from="1712388551073" duration="1113000" />
+      <workItem from="1712388551073" duration="2454000" />
+      <workItem from="1712471487122" duration="894000" />
+      <workItem from="1712587801227" duration="1480000" />
+      <workItem from="1712640819116" duration="1351000" />
     </task>
     <task id="LOCAL-00001" summary="swagger注解的基本使用">
       <option name="closed" value="true" />
@@ -399,7 +397,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711972891302</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="完成了定时任务如定时检查用户收到货确认收获没，完成用户下单 商家拒单接单查看订单详情等功能。">
+      <option name="closed" value="true" />
+      <created>1712389757205</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712389757205</updated>
+    </task>
+    <task id="LOCAL-00015" summary="完成了定时任务如定时检查用户收到货确认收获没，完成用户下单 商家拒单接单查看订单详情等功能。">
+      <option name="closed" value="true" />
+      <created>1712389767982</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712389767982</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,7 +445,8 @@
     <MESSAGE value="完成微信小程序与后端对接，完成套餐相关接口。" />
     <MESSAGE value="完成套餐緩存和購物車系統" />
     <MESSAGE value="完善购物车系统，包括查看购物车和删除购物车" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善购物车系统，包括查看购物车和删除购物车" />
+    <MESSAGE value="完成了定时任务如定时检查用户收到货确认收获没，完成用户下单 商家拒单接单查看订单详情等功能。" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了定时任务如定时检查用户收到货确认收获没，完成用户下单 商家拒单接单查看订单详情等功能。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
