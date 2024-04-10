@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="用户催单完成">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4712b962-abbe-4079-a419-18ac41fd03fc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4712b962-abbe-4079-a419-18ac41fd03fc.xml" afterDir="false" />
+    <list default="true" id="d565aa40-d6a1-4b6d-9daa-594189450d7a" name="Changes" comment="完成销量统计以及菜品热销统计">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-pojo/src/main/java/com/sky/vo/OrderReportVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-pojo/src/main/java/com/sky/vo/OrderReportVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/DishMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/DishMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/SetmealMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/SetmealMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/java/com/sky/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/DishMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/DishMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/SetmealMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/SetmealMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-take-out/sky-server/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +125,7 @@
       <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-server\src\main\java\com\sky\controller\user" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-server\src\main\java\com\sky\mapper" />
       <recent name="G:\外卖\资料\day01\后端初始工程\sky-take-out\sky-common\src\main\java\classdemo\opration" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -294,7 +299,7 @@
       <workItem from="1712587801227" duration="1480000" />
       <workItem from="1712640819116" duration="1567000" />
       <workItem from="1712666124611" duration="11697000" />
-      <workItem from="1712725068318" duration="4741000" />
+      <workItem from="1712725068318" duration="7376000" />
     </task>
     <task id="LOCAL-00001" summary="swagger注解的基本使用">
       <option name="closed" value="true" />
@@ -424,7 +429,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712642283791</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="完成销量统计以及菜品热销统计">
+      <option name="closed" value="true" />
+      <created>1712731418310</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712731418310</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,7 +471,8 @@
     <MESSAGE value="完善购物车系统，包括查看购物车和删除购物车" />
     <MESSAGE value="完成了定时任务如定时检查用户收到货确认收获没，完成用户下单 商家拒单接单查看订单详情等功能。" />
     <MESSAGE value="用户催单完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="用户催单完成" />
+    <MESSAGE value="完成销量统计以及菜品热销统计" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成销量统计以及菜品热销统计" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
