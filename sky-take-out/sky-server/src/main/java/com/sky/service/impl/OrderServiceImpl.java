@@ -88,6 +88,15 @@ public class OrderServiceImpl implements OrderService {
         orders.setPhone(address.getPhone());
         //插入数据
         orderMapper.insert(orders);
+        List<OrderDetail> orderDetailList = new ArrayList<>();
+        for (ShoppingCart cart:ShopCarts)
+        {
+            OrderDetail orderDetail=new OrderDetail();
+            BeanUtils.copyProperties(cart,orderDetail);
+            orderDetail.setOrderId(orders.getId());
+            orderDetailList.add(orderDetail);
+        }
+        orderDetailMapper.insertBrach(orderDetailList);
         //封装返回前端VO对象
         OrderSubmitVO orderSubmitVO = new OrderSubmitVO();
         orderSubmitVO.setOrderNumber(orders.getNumber());
@@ -340,7 +349,7 @@ public class OrderServiceImpl implements OrderService {
         Integer status=ordersConfirmDTO.getStatus();
         Orders orders=new Orders();
         orders.setId(orderId);
-        orders.setStatus(status);
+        orders.setStatus(Orders.CONFIRMED);
         orderMapper.update(orders);
     }
 

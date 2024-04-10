@@ -780,7 +780,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="232" parent="1" name="sky_take_out">
-      <LastIntrospectionLocalTimestamp>2024-03-16.09:13:40</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-04-10.05:04:45</LastIntrospectionLocalTimestamp>
       <CollationName>latin1_swedish_ci</CollationName>
     </schema>
     <schema id="233" parent="1" name="student">
@@ -9261,7 +9261,7 @@ Transition_type_id</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="1462" parent="351" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>2</AutoIncrement>
       <Comment>主键</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
@@ -9355,7 +9355,7 @@ Transition_type_id</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="1478" parent="352" name="id">
-      <AutoIncrement>23</AutoIncrement>
+      <AutoIncrement>22</AutoIncrement>
       <Comment>主键</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
@@ -9423,7 +9423,7 @@ Transition_type_id</ColNames>
       <UnderlyingIndexName>idx_category_name</UnderlyingIndexName>
     </key>
     <column id="1491" parent="353" name="id">
-      <AutoIncrement>70</AutoIncrement>
+      <AutoIncrement>69</AutoIncrement>
       <Comment>主键</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
@@ -9622,7 +9622,7 @@ Transition_type_id</ColNames>
       <UnderlyingIndexName>idx_username</UnderlyingIndexName>
     </key>
     <column id="1528" parent="356" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>4</AutoIncrement>
       <Comment>主键</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
@@ -9683,7 +9683,7 @@ Transition_type_id</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="1539" parent="357" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>20</AutoIncrement>
       <Comment>主键</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
@@ -9829,7 +9829,7 @@ Transition_type_id</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="1565" parent="358" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>4</AutoIncrement>
       <Comment>主键</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
@@ -9908,7 +9908,7 @@ Transition_type_id</ColNames>
       <UnderlyingIndexName>idx_setmeal_name</UnderlyingIndexName>
     </key>
     <column id="1580" parent="359" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>13</AutoIncrement>
       <Comment>主键</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
@@ -9950,7 +9950,7 @@ Transition_type_id</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="1588" parent="360" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>15</AutoIncrement>
       <Comment>主键</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
@@ -10016,7 +10016,7 @@ Transition_type_id</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="1600" parent="361" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>2</AutoIncrement>
       <Comment>主键</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
